@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4ff8b59-f546-44ee-aeb5-1587a1bdc120">
+  <producedTypes>
+    <objectType typeId="1531c173-4ffe-4b0a-af73-9499e613edf3" valueTypeId="989d3bf6-6dd1-4eb8-9ff6-94883fc9d65f"/>
+  </producedTypes>
+  <name>isdayoff</name>
+  <synonym>
+    <key>ru</key>
+    <value>Isdayoff</value>
+  </synonym>
+  <comment>API производственного календаря. Проверка даты на принадлежность к нерабочему дню, согласно официальным указам и распоряжениям</comment>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="0f7428cc-fefb-4022-9964-7139733fc897"/>
+  <defaultForm>ExternalDataProcessor.isdayoff.Form.Форма</defaultForm>
+  <forms uuid="78978513-b6e3-4a2e-becc-05a195b78999">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>
