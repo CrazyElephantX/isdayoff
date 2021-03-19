@@ -8,7 +8,7 @@
     <key>ru</key>
     <value>Isdayoff</value>
   </synonym>
-  <comment>API производственного календаря. Проверка даты на принадлежность к нерабочему дню, согласно официальным указам и распоряжениям</comment>
+  <comment>v1.01 API производственного календаря. Проверка даты на принадлежность к нерабочему дню, согласно официальным указам и распоряжениям</comment>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="0f7428cc-fefb-4022-9964-7139733fc897"/>
   <defaultForm>ExternalDataProcessor.isdayoff.Form.Форма</defaultForm>
   <forms uuid="78978513-b6e3-4a2e-becc-05a195b78999">
