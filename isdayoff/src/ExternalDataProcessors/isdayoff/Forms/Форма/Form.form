@@ -14,6 +14,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Дата</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ДатаПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ДатаРасширеннаяПодсказка</name>
         <id>3</id>
@@ -53,17 +57,21 @@
         <textEdit>true</textEdit>
       </extInfo>
     </items>
-    <items xsi:type="form:Button">
-      <name>ПроверитьДату</name>
-      <id>6</id>
+    <items xsi:type="form:Decoration">
+      <name>ТипДня</name>
+      <id>23</id>
+      <title>
+        <key>ru</key>
+        <value>Тип дня</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <extendedTooltip>
-        <name>ПроверитьДатуРасширеннаяПодсказка</name>
-        <id>7</id>
+        <name>ТипДняРасширеннаяПодсказка</name>
+        <id>25</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -76,13 +84,22 @@
           <horizontalAlign>Left</horizontalAlign>
         </extInfo>
       </extendedTooltip>
-      <type>UsualButton</type>
-      <commandName>Form.Command.ПроверитьДату</commandName>
-      <representation>Auto</representation>
+      <contextMenu>
+        <name>ТипДняКонтекстноеМеню</name>
+        <id>24</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
-      <placementArea>UserCmds</placementArea>
-      <representationInContextMenu>Auto</representationInContextMenu>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
     </items>
     <visible>true</visible>
     <enabled>true</enabled>
@@ -178,6 +195,10 @@
       <segments>Страна</segments>
     </dataPath>
     <titleLocation>Top</titleLocation>
+    <handlers>
+      <event>OnChange</event>
+      <name>СтранаПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>СтранаРасширеннаяПодсказка</name>
       <id>16</id>
@@ -264,6 +285,10 @@
       <value>0 - Без вывода сокращённых дней (по-умолчанию)
 1 - Распознавать, что день предпразднечный (сокращённый)</value>
     </toolTip>
+    <handlers>
+      <event>OnChange</event>
+      <name>РаспознаватьСокращенныеДниПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>РаспознаватьСокращенныеДниРасширеннаяПодсказка</name>
       <id>19</id>
@@ -307,6 +332,10 @@
     <dataPath xsi:type="form:DataPath">
       <segments>УчитыватьКовид</segments>
     </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>УчитыватьКовидПриИзменении</name>
+    </handlers>
     <extendedTooltip>
       <name>УчитыватьКовидРасширеннаяПодсказка</name>
       <id>22</id>
@@ -470,23 +499,6 @@
       <common>true</common>
     </edit>
   </attributes>
-  <formCommands>
-    <name>ПроверитьДату</name>
-    <title>
-      <key>ru</key>
-      <value>Проверить дату</value>
-    </title>
-    <id>1</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ПроверитьДату</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
